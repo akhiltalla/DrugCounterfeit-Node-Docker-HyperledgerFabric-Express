@@ -1,0 +1,11 @@
+
+Command 'peer' not found, did you mean:
+
+  command 'pee' from deb moreutils
+  command 'seer' from deb seer
+  command 'beer' from deb gerstensaft
+  command 'peet' from deb pipexec
+  command 'pear' from deb php-pear
+
+Try: sudo apt install <deb name>
+

@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "6f207e1c-4b6e-40b8-8ed4-f7139ba8dca4",
+		"name": "History Track Down",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Drug Current State",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"consumer\",\n    \"drugName\": \"Paracetamol\",\n    \"serialNo\": \"001\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/viewDrugCurrentState",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewDrugCurrentState"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View history",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"consumer\",\n    \"drugName\": \"Paracetamol\",\n    \"serialNo\": \"001\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/viewHistory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewHistory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

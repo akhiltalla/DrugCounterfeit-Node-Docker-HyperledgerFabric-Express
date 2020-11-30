@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "c237e339-3f79-4a17-9f41-3c0bbbca4bbe",
+		"name": "Initiation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Initial Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Orgs To Wallet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/addUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Company- Sun Pharma",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"manufacturer\",\n    \"companyCRN\": \"MAN001\",\n    \"companyName\": \"Sun Pharma\",\n    \"location\": \"Chennai\",\n    \"organisationRole\": \"Manufacturer\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Company- Fedex",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"retailer\",\n    \"companyCRN\": \"TRA001\",\n    \"companyName\": \"FedEx\",\n    \"location\": \"Delhi\",\n    \"organisationRole\": \"Transporter\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Company- Blue Dart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"retailer\",\n    \"companyCRN\": \"TRA002\",\n    \"companyName\": \"Blue Dart\",\n    \"location\": \"Bangalore\",\n    \"organisationRole\": \"Transporter\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Company- VG Pharma",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"distributor\",\n    \"companyCRN\": \"DIST001\",\n    \"companyName\": \"VG pharma\",\n    \"location\": \"Vizag\",\n    \"organisationRole\": \"Distributor\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Company- upgrad",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"retailer\",\n    \"companyCRN\": \"RET002\",\n    \"companyName\": \"upgrad\",\n    \"location\": \"Mumbai\",\n    \"organisationRole\": \"Retailer\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Drug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgType\": \"manufacturer\",\n    \"drugName\": \"Paracetamol\",\n    \"serialNo\": \"004\",\n    \"mfgDate\": \"01/05/2020\",\n    \"expDate\": \"01/05/2025\",\n    \"companyCRN\": \"MAN001\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/addDrug",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addDrug"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
